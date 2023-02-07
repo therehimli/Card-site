@@ -3,6 +3,7 @@ import { Suspense } from 'react'
 import { BsTelegram, BsTwitter } from 'react-icons/bs'
 import Link from 'next/link'
 import Image from 'next/image'
+import Head from 'next/head'
 import { FiMail } from 'react-icons/fi'
 
 import styles from '../assets/styles/Home.module.scss'
@@ -12,6 +13,9 @@ import sign from '../assets/images/sign.png'
 const Home = () => {
   return (
     <div className={styles.Home}>
+      <Head>
+        <link rel="shortcut icon" href="icon.png" />
+      </Head>
       <video className={styles.video} src="spacebg.mp4" autoPlay muted loop />
       <div className={styles.content}>
         <div className={styles.planet}>

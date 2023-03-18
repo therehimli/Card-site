@@ -29,7 +29,9 @@ const Home = () => {
           <div className={styles.modal}>
             <div className={styles.buttons}>
               <button className={styles.button}>Blog</button>
-              <button className={styles.button}>Projects</button>
+              <Link target="_blank" href="https://my-projects-iota.vercel.app/">
+                <button className={styles.button}>Projects</button>
+              </Link>
               <Link
                 className={styles.Link}
                 target="_blank"
